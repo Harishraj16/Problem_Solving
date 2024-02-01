@@ -1,3 +1,4 @@
+//Cpp:
 class Solution {
 public:
     vector<int> findDisappearedNumbers(vector<int>& nums) {
@@ -16,6 +17,24 @@ public:
 };
 
 
+//Java:
+
+class Solution {
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        int n = nums.length;
+        List<Integer> list = new ArrayList<>();
+        boolean[] arr = new boolean[n];
+        for(int i=0;i<n;i++){
+            arr[nums[i]-1] = true;
+        }
+        for(int i=0;i<n;i++){
+            if(arr[i]!=true) list.add(i+1);
+        }
+        return list;
+    }
+}
+
+//Optimal code:
 class Solution {
 public:
     vector<int> findDisappearedNumbers(vector<int>& nums) {
