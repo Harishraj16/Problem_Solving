@@ -19,3 +19,26 @@ public:
         return res;
     }
 };
+
+
+//JAVA:
+class Solution {
+    public char nextGreatestLetter(char[] letters, char target) {
+        int start = 0, end = letters.length-1;
+        char result = letters[0];
+        if(letters[start]>target || letters[end]<=target){
+            return result;
+        }
+        while(start<=end){
+            int mid = start+(end-start)/2;
+            if(letters[mid]<=target){
+                start = mid+1;
+            }
+            else{
+                result = letters[mid];
+                end = mid-1;
+            }
+        }
+        return result;
+    }
+}
