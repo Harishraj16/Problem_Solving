@@ -1,4 +1,4 @@
-//time:O(N) optimal code below is also have O(N) but this takes more time than optimal code bellow;
+//time:O(N) optimal code below is also have O(N) but that optimal code performs better than the first code;
 class Solution
 {
     public static void sort012(int a[], int n)
