@@ -7,3 +7,22 @@ class Solution{
         return -1;
     }
 };
+
+//Optimal Way:
+class Solution{
+  public:
+    int findExtra(int a[], int b[], int n) {
+        int start = 0;
+        int end = n-1;
+        int mid,index;
+        while(start<=end){
+            mid = start + (end-start)/2;
+            if(a[mid]==b[mid]) start = mid+1;
+            else{
+                index = mid;
+                end = mid-1;
+            }
+        }
+        return index;
+    }
+};
