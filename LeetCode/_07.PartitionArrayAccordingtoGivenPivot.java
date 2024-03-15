@@ -21,3 +21,31 @@ class Solution {
         return ans;
     }
 }
+
+//--------------------------------------------------------------------------------------------------------------------
+
+class Solution {
+    public int[] pivotArray(int[] nums, int pivot) {
+        int[] res = new int[nums.length];
+        int index = 0;
+        for(int i: nums){
+            if(i<pivot){
+                res[index] = i;
+                index++;
+            }
+        }
+        for(int i: nums){
+            if(i==pivot){
+                res[index] = i;
+                index++;
+            }
+        }
+        for(int i: nums){
+            if(i>pivot){
+                res[index] = i;
+                index++;
+            }
+        }
+        return res;
+    }
+}
