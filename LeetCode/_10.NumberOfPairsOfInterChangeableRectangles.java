@@ -1,4 +1,4 @@
-//2001. Number of Pairs of Interchangeable Rectangles
+//2001. Number of Pairs of Interchangeable Rectangles.
 class Solution {
     public long interchangeableRectangles(int[][] nums) {
         int n = nums.length;
