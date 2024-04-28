@@ -14,7 +14,7 @@ class Solution {
                 res[i][right] = num++;
             }
             right--;
-            if(left<=right){
+            if(left<=right){ 
                 for(int i=right;i>=left;i--){
                     res[bottom][i] = num++;
                 }
