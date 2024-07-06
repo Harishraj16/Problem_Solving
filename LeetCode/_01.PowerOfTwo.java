@@ -23,6 +23,7 @@ class Solution {
     }
 }
 
+//optimal Approach:
 
 class Solution {
     public boolean isPowerOfTwo(int n) {
